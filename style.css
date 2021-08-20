@@ -1,0 +1,97 @@
+html, body, .container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0f1922;
+}
+.block {
+    background-color: #fd4553;
+    width: 30px;
+    height: 30px;
+}
+.square {
+    border: solid 2px #fd4553;
+    width: 30px;
+    height: 30px;
+}
+/* elements */
+.sq1 {
+    position: absolute;
+    top: 5%;
+    left: 20%;
+}
+.sq2 {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+}
+.sq3 {
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+}
+.sq4 {
+    position: absolute;
+    bottom: 5%;
+    right: 40%;
+}
+.sq5 {
+    position: absolute;
+
+    top: 60%;
+    left: 20%;
+}
+
+.bl1 {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.bl2 {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+.bl3 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+.bl4 {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+.bl5 {
+    position: absolute;
+    top: 70%;
+    left: 60%;
+}
+
+/* animation */
+@keyframes up {
+    from {
+      opacity: 0;
+      transform: rotate(0deg);
+    }
+  
+    to {
+      opacity: 1;
+      transform: rotate(360deg);
+    }
+  }
+.animate-up {
+    margin: 0 auto;
+    animation-name: up;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
